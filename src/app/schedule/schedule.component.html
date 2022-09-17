@@ -1,0 +1,20 @@
+<app-header></app-header>
+<html>
+    <body  style="background-image: url('/assets/img_5.webp');" class="background">
+<div class="main-div">
+    <!-- <div style="width: fit-content;"> -->
+        <h3>Enter Date to schedule a meet between Medical representative & doctors</h3><br><br>
+    <!-- </div> -->
+     Date: &nbsp;
+     <input type="date"   [(ngModel)]="scheduledate"><br><br><br>
+<div>
+    <button class="btn btn-outline-success" name="Submit" (click)="add()">Submit</button>
+</div>
+<div class="error">
+    {{errorMsg}}
+</div>
+</div>
+
+</body> 
+</html>
+    

@@ -1,0 +1,34 @@
+<app-header></app-header>
+<html>
+    <body  style="background-image: url('/assets/img_5.webp');" class="background">
+<div class="main" >
+    <h4>Selected Date:{{msg}}</h4>
+    <div class="table-wrapper" >
+        <table class="fl-table">
+            <thead>
+            <tr>
+                <th>RepName</th>
+                <th>DoctorName</th>
+                <th>TreatingAilment</th>
+                <th>Medicine</th>
+                <th>MeetingSlot</th>
+                <th>DateOfMeeting</th>
+                <th>DoctorContactNumber</th>
+             </tr>
+            </thead>
+            <tr *ngFor = "let data of members">
+                <td>{{data.repName}}</td>
+                <td>{{data.doctorName}}</td>
+                <td>{{data.treatingAilment}}</td>
+                <td>{{data.medicine}}</td>
+                <td>{{data.meetingSlot}}</td>
+                <td>{{data.dateOfMeeting}}</td>
+                <td>{{data.doctorContactNumber}}</td>
+             </tr>
+            
+        </table>
+    
+    </div>
+</div>
+</body> 
+</html>

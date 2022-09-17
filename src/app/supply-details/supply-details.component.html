@@ -1,0 +1,22 @@
+<app-header></app-header>
+<html>
+    <body class="background">
+        <div class="table-wrapper" style="padding-left: 250px;">
+    
+            <table class="fl-table" >
+                <thead>
+                <tr>
+                    <th>Pharmacy</th>
+                    <th>Medicine</th>
+                    <th>Count</th>
+                </tr>
+            </thead>
+                <tr *ngFor="let data1 of count">
+                    <td>{{data1.pharmacyName}}</td>
+                    <td>{{data1.medicineName}}</td>
+                    <td>{{data1.supplyCount}}</td>
+                </tr>
+            </table>
+        </div >
+    </body>
+</html>

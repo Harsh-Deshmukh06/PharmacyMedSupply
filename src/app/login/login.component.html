@@ -1,0 +1,29 @@
+<app-header></app-header>
+<html>
+    <body  style="background-image: url('/assets/login.jpeg');" class="background">
+        <div class="welcome-div">Welcome to Pharmacy Medicine Supply Portal</div><br><br>
+        <div class="card-div">
+            <div class="card left">
+                <div class="container">
+                    <div class="main-div">
+                        <form  #loginForm="ngForm" (ngSubmit)="AuthenticateUser(loginForm)">
+                           
+                                UserName : <input type="text" id="username" name="username" ngModel  placeholder="User Name" required autofocus/>
+                                <br>
+                                <br>
+                                Password : <input type="password" id="password" name="password" ngModel  placeholder="Password" required/>
+                                <br>
+                                <br>
+                                <button  type= submit class="button">Login</button>
+                                
+                        </form>
+                    </div><br>
+                        <div *ngIf="errorMsg!=''" class="error">
+                            {{errorMsg}}!!!!
+                        </div>
+                </div>
+            </div>
+        </div>
+        <router-outlet></router-outlet>
+    </body>
+</html>

@@ -1,0 +1,47 @@
+<app-header></app-header>
+<html>
+    <meta charset = "UTF-8" />
+    <body  style="background-image: url('/assets/img_5.webp');" class="background">
+<div class="table-wrapper" >
+<form action="add()">
+    <table class="fl-table">
+        <tr>
+            <th><b>Medicine</b></th>
+            <th><b>Count</b></th>
+        </tr>
+        <tr>
+            <td>Dolo 650</td>
+            <td><input name='Dolo 650' type="number" [(ngModel)]="counts" required /></td>
+        </tr>
+        <tr>
+            <td>Azithromycin</td>
+            <td><input name='Azithromycin' type="number" [(ngModel)]="counts1" required></td>
+        </tr>
+        <tr>
+            <td>Citragen</td>
+            <td><input name='Citragen'type="number" [(ngModel)]="counts2" required></td>
+        </tr>
+        <tr>
+            <td>Tessalon</td>
+            <td><input name='Tessalon' type="number" [(ngModel)]="counts3" required></td>
+        </tr>
+        <tr>
+            <td>Telma</td>
+            <td><input name='Telma' type="number" [(ngModel)]="counts4" required></td>
+        </tr>
+        <tr>
+            
+           <td colspan="2"><button type="submit" class="btn btn-outline-danger"  (click)="add()">Submit</button></td> 
+         
+        </tr>
+        
+       
+    </table>  
+    <div class="error">
+        {{errorMsg}}
+    </div>
+</form>
+</div>
+
+</body>
+</html>

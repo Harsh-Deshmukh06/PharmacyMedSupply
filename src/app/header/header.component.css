@@ -1,0 +1,55 @@
+.header-div{
+  height: 50px;
+  background-color: rgb(179, 61, 86);
+  width: 100%;
+  color: white;
+}
+.heading{
+  padding-top: 15px;
+  padding-left: 20px;
+  font-weight:bolder;
+  font-size: 75px;
+  background-color: grey;
+}
+.button{
+  background-color: rgb(179, 61, 86);
+  border-radius: 10px;
+  width: 100px;
+  height: 30px;
+  color: white;
+  border-style: none;
+  text-align: right;
+}
+
+.button-div{
+  text-align: right;
+}
+
+
+.header {
+  height: 50px;
+ background-color: grey;;
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+
+.header a {
+  float: left;
+  color: white;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.header-right {
+  float: right;
+}
